@@ -6,11 +6,11 @@ import Image from "next/image";
 
 import { uploadString } from "firebase/storage";
 
-const index = () => {
+const Index = () => {
   const [users, setUsers] = useState([]);
   const [error, setError] = useState();
 
-  useEffect(async () => {
+  useEffect( async () => {
     const { token } = JSON.parse(localStorage.getItem("userInfo"));
     try {
       const { data } = await axios.get("/api/admin", {
@@ -49,4 +49,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

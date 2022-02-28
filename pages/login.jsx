@@ -7,7 +7,7 @@ import style from "../styles/Contact.module.css";
 import Circle from "../components/Circle";
 import Link from "next/link";
 
-const login = () => {
+const Login = () => {
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -64,7 +64,7 @@ const login = () => {
           SUBMIT
         </button>
         <h3>
-          Don't have Account ?
+          Dont have Account ?
           <span style={{ marginLeft: "10px",color:"green" }}>
             <Link href="/register">REGISTER</Link>
           </span>
@@ -72,42 +72,8 @@ const login = () => {
       </form>
     </div>
 
-    // <div className={styles.inner_container}>
-
-    //   <div className={styles.header}>Login</div>
-    //   <div className={styles.box}>
-    //     <div className={styles.input_group}>
-    //       <label htmlFor="emial">Email</label>
-    //       <input
-    //         type="email"
-    //         name="email"
-    //         className={styles.login_input}
-    //         placeholder="Email"
-    //         onChange={(e) => setEmail(e.target.value)}
-    //       />
-    //     </div>
-
-    //     <div className={styles.input_group}>
-    //       <label htmlFor="password">Password</label>
-    //       <input
-    //         type="password"
-    //         name="password"
-    //         className={styles.login_input}
-    //         placeholder="Password"
-    //         onChange={(e) => setPassword(e.target.value)}
-    //       />
-    //     </div>
-
-    //     <button
-    //       type="button"
-    //       className={styles.login_btn}
-    //       onClick={handleSubmitLogin}
-    //     >
-    //       Login
-    //     </button>
-    //   </div>
-    // </div>
+  
   );
 };
 
-export default login;
+export default Login;

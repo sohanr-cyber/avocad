@@ -3,7 +3,7 @@ import Circle from "../components/Circle";
 import style from "../styles/Contact.module.css";
 import React from "react";
 
-const logout = () => {
+const Logout = () => {
   const router = useRouter();
   const handleLogout = async (e) => {
     e.preventDefault();
@@ -43,11 +43,8 @@ const logout = () => {
       </form>
     </div>
 
-    // <div>
-    //     <div>Are Your sure to Logout?</div>
-    //     <div onClick={handleLogout}>Yes</div>
-    // </div>
+
   );
 };
 
-export default logout;
+export default Logout;

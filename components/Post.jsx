@@ -19,6 +19,7 @@ const Posts = ({ content }) => {
           width="270"
           height="270"
           objectFit="cover"
+          alt="Image"
         />
       </div>
       <Moment format="YYYY/MM/DD">{content.createdAt}</Moment>

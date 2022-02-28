@@ -5,7 +5,7 @@ import style from "../styles/Contact.module.css";
 import Circle from "../components/Circle";
 import Link from "next/link";
 
-const login = () => {
+const Register = () => {
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -185,4 +185,4 @@ const login = () => {
   );
 };
 
-export default login;
+export default Register;
