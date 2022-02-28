@@ -1,0 +1,12 @@
+.heading {
+    text-align: center;
+}
+
+.container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:35px 0;
+    text-align: center;
+}
+

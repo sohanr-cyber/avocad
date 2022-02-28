@@ -1,0 +1,15 @@
+.profileContainer {
+    
+    position:fixed;
+    background-color:rgb(185, 208, 185);
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+    z-index: 60000;
+    right:0;
+    top:0;
+    
+}
+
+
