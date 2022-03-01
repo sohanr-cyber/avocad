@@ -25,7 +25,7 @@ const Navbar = () => {
         {user ? (
           <>
            
-            <li className={style.listItem}>
+            <li className={style.listItem} style = {{padding:"20px"}}>
               <Link href={user._id}>PROFILE</Link>
             </li>
             <li className={style.listItem}>

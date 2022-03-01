@@ -15,7 +15,7 @@ const Intro = () => {
         </h1>
         <p className={style.desc}>
           Send a message to the mail address to view all the documents of the
-          plan. If you face any problem immediately mail us
+          plan/Purchase process issue. If you face any problem immediately mail us
         </p>
         <button className={style.button}>DISCOVER</button>
       </div>

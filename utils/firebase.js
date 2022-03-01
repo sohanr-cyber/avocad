@@ -3,16 +3,18 @@ import { initializeApp } from "firebase/app";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA6NKhzvPMJbA3_aOK7eOv1MuQBtkM4N8Y",
-  authDomain: "drive-ccbbd.firebaseapp.com",
-  projectId: "drive-ccbbd",
-  storageBucket: "drive-ccbbd.appspot.com",
-  messagingSenderId: "471551820517",
-  appId: "1:471551820517:web:0c17d7a985164dfae64a0c",
-  measurementId: "G-MSRSTMXHL3",
+
+  apiKey: "AIzaSyArUQH6E-ruASXDS43MAs-LE_QDjjkA73c",
+  authDomain: "stone-dc116.firebaseapp.com",
+  projectId: "stone-dc116",
+  storageBucket: "stone-dc116.appspot.com",
+  messagingSenderId: "824449225051",
+  appId: "1:824449225051:web:9df0f53bd24bbd55ffca7e",
+  measurementId: "G-VDB0GS2PZN"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
 
 export const db = getStorage(app);
