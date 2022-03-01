@@ -73,10 +73,10 @@ const Navbar = () => {
         ) : (
           <>
             <li className={style.menuItem}>
-              <Link href="/register">DEVELOPMENT</Link>
+              <Link href="/register">REGISTER</Link>
             </li>
             <li className={style.menuItem}>
-              <Link href="/login">PRODUCTION</Link>
+              <Link href="/login">LOGOUT</Link>
             </li>
           </>
         )}
