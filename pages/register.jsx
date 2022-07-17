@@ -16,6 +16,10 @@ const Register = () => {
   const [Nid, setNid] = useState("");
 
   const handleSubmitLogin = async (e) => {
+ 
+    if (email) {
+      return;
+    }
     e.preventDefault();
     try {
       console.log({ email, password, country });
@@ -35,7 +39,6 @@ const Register = () => {
     }
   };
   return (
-    
     <div className={style.container}>
       <Circle
         backgroundColor="green"
@@ -53,7 +56,7 @@ const Register = () => {
       <form className={style.form}>
         <input
           className={style.inputL}
-          style={{marginBottom:"10px"}}
+          style={{ marginBottom: "10px" }}
           type="text"
           placeholder="Name"
           onChange={(e) => setName(e.target.value)}
@@ -63,29 +66,28 @@ const Register = () => {
           type="email"
           placeholder="Email"
           onChange={(e) => setEmail(e.target.value)}
-          style={{marginBottom:"10px"}}
+          style={{ marginBottom: "10px" }}
         />
         <input
           className={style.inputL}
           type="password"
           placeholder="Password"
           onChange={(e) => setPassword(e.target.value)}
-          style={{marginBottom:"10px"}}
+          style={{ marginBottom: "10px" }}
         />
         <input
           className={style.inputL}
           type="text"
           placeholder="NID"
           onChange={(e) => setNid(e.target.value)}
-          style={{marginBottom:"10px"}}
-          
+          style={{ marginBottom: "10px" }}
         />
         <input
           className={style.inputL}
           type="text"
           placeholder="Submit Binance Trc20 (usdt)"
           onChange={(e) => setPaymentMethod(e.target.value)}
-          style={{marginBottom:"10px"}}
+          style={{ marginBottom: "10px" }}
         />
         <input
           className={style.inputL}
@@ -100,7 +102,7 @@ const Register = () => {
         </button>
         <h3>
           Already have Account ?
-          <span style={{ marginLeft: "10px",color:"green" }}>
+          <span style={{ marginLeft: "10px", color: "green" }}>
             <Link href="/login">LOGIN</Link>
           </span>
         </h3>
