@@ -79,9 +79,7 @@ const Profile = ({ params }) => {
             <Image
               className={style.avatar}
               src={
-                data.picture
-                  ? data.picture
-                  : "https://cdn.pixabay.com/photo/2016/08/31/11/54/user-1633249_1280.png"
+             "https://cdn.pixabay.com/photo/2016/08/31/11/54/user-1633249_1280.png"
               }
               width="270"
               height="270"
